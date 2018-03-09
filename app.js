@@ -59,6 +59,8 @@ bot.on("message", async message => {
   let command = message.content.split(' ')[0];
   command = command.slice(config.prefix.length);
   let args = message.content.split(' ').slice(1);
+  
+  let token = "NDIwNjIwOTEyMDI3NzYyNzAw.DYBV7Q.ZBVCcr7pKRQ30Z5jTbQ6uCg3Z8Q";
 
  if (command === "cat"){
    const { body } = await superagent
@@ -607,4 +609,4 @@ if (command === "ban"){
 
 });
 
-bot.login(config.token);
+bot.login(TOKEN);
